@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 function Education() {
   return (
     <div id="education" className="md:w-[90%] md:mx-auto min-h-[25vh] py-12">
@@ -8,10 +10,11 @@ function Education() {
         {/* imgae */}
 
         <figure>
-          <img
-            className="w-[300px] h-[300px] object-cover  translate-x-12  lg:translate-x-24"
+          <Image
             src="/university.png"
-            alt=""
+            width={300}
+            height={300}
+            alt="Picture of the author"
           />
         </figure>
 

@@ -1,4 +1,4 @@
-function DataCard({ data }: any) {
+function DataCard({ data }) {
   const { stack, info, live, github, challenges, lackings } = data || {};
   console.log(stack, info, live, github, challenges, lackings);
 
