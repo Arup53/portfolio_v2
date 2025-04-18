@@ -1,4 +1,3 @@
-import React from "react";
 import ProjectCard from "../sub/ProjectCard";
 
 const Projects = () => {
@@ -12,19 +11,25 @@ const Projects = () => {
       </h1>
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
         <ProjectCard
-          src="/NextWebsite.png"
-          title="Modern Next.js Portfolio"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          src="/project-1.png"
+          title="Reconnect Hub"
+          description="Reconnect Hub is a web application designed to help users reconnect with their lost or found belongings. This platform provides a convenient way for users to post items they have lost or found, and enables recovery tracking in a secure and user-friendly environment"
+          id={1}
         />
         <ProjectCard
-          src="/CardImage.png"
-          title="Interactive Website Cards"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          src="/project-2.png"
+          title="FundSpring"
+          description="FundSpring is a dynamic crowdfunding web application designed to empower users to create, manage, and contribute to impactful campaigns. It simplifies the process of fundraising and donation, offering an intuitive platform for users to support meaningful causes."
+          id={2}
         />
         <ProjectCard
-          src="/SpaceWebsite.png"
-          title="Space Themed Website"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          src="/project-3.png"
+          title="Donate Bangladesh"
+          description="Donate Bangladesh aims to bridge the gap between donors and volunteers.
+It creates a seamless platform for contributing to a meaningful cause.
+Focused on delivering winter clothes to those in need across the country,
+we strive to bring warmth and hope to communities throughout Bangladesh."
+          id={3}
         />
       </div>
     </div>
