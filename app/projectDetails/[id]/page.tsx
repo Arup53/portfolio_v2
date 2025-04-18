@@ -1,7 +1,17 @@
 import DataCard from "@/components/sub/DataCard";
 
+type Product = {
+  id: number;
+  stack: string;
+  info: string;
+  live: string;
+  github: string;
+  challenges: string[];
+  lackings: string[];
+};
+
 async function getProductById(id: string) {
-  const products = {
+  const products: Record<string, Product> = {
     "1": {
       id: 1,
       stack:
