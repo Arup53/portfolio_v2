@@ -1,6 +1,8 @@
-import { Socials } from "../constants/constants";
-import Image from "next/image";
-import React from "react";
+import Link from "next/link";
+
+import { ImLinkedin } from "react-icons/im";
+
+import { RxGithubLogo } from "react-icons/rx";
 
 const Navbar = () => {
   return (
@@ -20,22 +22,33 @@ const Navbar = () => {
             <a href="#skills" className="cursor-pointer">
               Skills
             </a>
+            <a href="#education" className="cursor-pointer">
+              Education
+            </a>
             <a href="#projects" className="cursor-pointer">
               Projects
+            </a>
+            <a href="#Contacts" className="cursor-pointer">
+              Contact
             </a>
           </div>
         </div>
 
-        <div className="flex flex-row gap-5">
-          {Socials.map((social) => (
-            <Image
-              src={social.src}
-              alt={social.name}
-              key={social.name}
-              width={24}
-              height={24}
-            />
-          ))}
+        <div className="flex flex-col md:flex-row gap-5">
+          <div className="flex">
+            <Link href="https://github.com/Arup53">
+              <span className="text-4xl text-gray-200">
+                <RxGithubLogo />
+              </span>
+            </Link>
+          </div>
+          <div className="flex">
+            <Link href="https://www.linkedin.com/in/arup-kumar-howlader/">
+              <span className="text-4xl text-gray-200">
+                <ImLinkedin />
+              </span>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

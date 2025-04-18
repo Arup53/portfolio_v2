@@ -10,6 +10,15 @@ import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 
 const HeroContent = () => {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/Resume-of-Arup-Kumar-Howlader.pdf"; // Path to the PDF file in the public folder
+    link.download = "Resume-of-Arup-Kumar-Howlader.pdf"; // File name for the downloaded file
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <motion.div
       initial="hidden"
@@ -52,7 +61,9 @@ const HeroContent = () => {
           variants={slideInFromLeft(1)}
           className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
         >
-          Learn More!
+          <button onClick={handleDownload} color="light">
+            Download Resume
+          </button>
         </motion.a>
       </div>
 
